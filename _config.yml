@@ -1,0 +1,85 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+# This is the default format. 
+# For more see: http://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:year/:month/:day/:title 
+
+url: "http://localhost"
+port: 4004
+title: Make Technology
+name: Make Technology
+email: 
+author: 
+description: > # Write an awesome description for your new site here.
+  Make Technology is a modern technology company that develops high quality software 
+  for enterprise applications, engineering tools, domain specific languages, 
+  and embedded systems. 
+  Most of our development are based on Eclipse RCP and Eclipse plugins. As a 
+  result, we use Eclipse related technologies, such us: Eclipse 4, OSGI, Eclipse EMF, 
+  ECP, EMF Forms, Graphiti, Eclipse GMF, Eclipse Sirius, Eclipse Xtext, among others. 
+  We also provide an Xtext solution for Microsoft Visual Studio.
+
+# Site owner
+owner:
+  name: lonelion
+  avatar: avatar_ss.jpg
+  bio: "Serial Entrepreneur. In my spare time, I play football in the big leagues..."
+  email: 
+  disqus-shortname: maketechnologyblog
+  twitter: 
+  facebook: 
+  google:
+    plus: 
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: lonelion
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.io, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url: http://www.wemaketechnology.com
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: twitter
+    url: https://twitter.com/wemaketech
+  - title: linkedin
+    url: https://www.linkedin.com/company/make-technology
+
+blog_path: /blog.html
+# blog_path : /posts.html
+exclude: [js/bootstrap.js, js/jquery-1.11.0.js, js/landing-page.js, css/landing-page.css, css/bootstrap.css, css/page.css, css/bootstrap-social.css, font-awesome-4.1.0/css/font-awesome.css, font-awesome-4.1.0/scss, font-awesome-4.1.0/less, "GemFile", "Gemfile.lock", README.md]

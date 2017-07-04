@@ -1,0 +1,45 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="/#home">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li> 
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/#about">About</a>
+                    </li>
+                    {% for service in site.categories.services reversed %}
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="/#{{ service.pathName }}">{{ service.title }}</a>
+                        </li>
+                    {% endfor %}    
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/#locations">Locations</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="/#contact">Contact</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    {% assign size = site.categories.blog | size %}
+                    {% if size > 0 %}
+                        <li>
+                            <a href="{{site.blog_path}}">Blog</a>
+                        </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
+            </div>
+            <div class="col-md-4">
+                We are creating amazing products that delight our customers, do not wait and be one of them.
+            </div>
+        </div>
+    </div>
+</footer>
